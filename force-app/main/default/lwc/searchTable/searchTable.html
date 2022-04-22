@@ -1,0 +1,13 @@
+<template>
+    <lightning-card >
+        <p>{filterValue}</p>
+        <template if:true={contacts}>
+            <lightning-datatable hide-checkbox-column
+                key-field="Id"
+                data={contacts}
+                columns={columns}
+            >
+           </lightning-datatable>
+        </template>
+    </lightning-card>
+</template>
